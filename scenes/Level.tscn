@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://bcx3fjpyr27ok"]
+
+[ext_resource type="Script" path="res://scripts/Level.cs" id="1_k43h7"]
+[ext_resource type="Texture2D" uid="uid://qr3k2eb5whmm" path="res://graphics/white.png" id="2_b8a3t"]
+[ext_resource type="PackedScene" uid="uid://b05r2njsgd63k" path="res://scenes/Player.tscn" id="3_8sm08"]
+[ext_resource type="Texture2D" uid="uid://cgi81d8acq3ix" path="res://graphics/wizard/wizard_face.png" id="4_5825o"]
+[ext_resource type="Script" path="res://scripts/Camera.cs" id="4_tp77k"]
+[ext_resource type="PackedScene" uid="uid://cd0f0yunb0f3j" path="res://scenes/Goblin.tscn" id="6_ullmy"]
+
+[node name="Level" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_k43h7")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("2_b8a3t")
+
+[node name="Player" parent="." instance=ExtResource("3_8sm08")]
+scale = Vector2(3, 3)
+
+[node name="Camera" type="Camera2D" parent="."]
+script = ExtResource("4_tp77k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_5825o")
+
+[node name="Goblin" parent="." instance=ExtResource("6_ullmy")]
+position = Vector2(-221, -35)
+scale = Vector2(3, 3)

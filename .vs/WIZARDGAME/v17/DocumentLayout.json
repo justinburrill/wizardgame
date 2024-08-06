@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\src\\godot\\wizard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\maths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\maths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 587,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\Player.cs",
+              "RelativeDocumentMoniker": "scripts\\Player.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\Player.cs",
+              "RelativeToolTip": "scripts\\Player.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwBAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T23:22:56.121Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 587,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\Character.cs",
+              "RelativeDocumentMoniker": "scripts\\Character.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\Character.cs",
+              "RelativeToolTip": "scripts\\Character.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAIA9wA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:34:37.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\HealthBar.cs",
+              "RelativeDocumentMoniker": "scripts\\HealthBar.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\HealthBar.cs*",
+              "RelativeToolTip": "scripts\\HealthBar.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAEwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T00:30:07.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Goblin.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\Goblin.cs",
+              "RelativeDocumentMoniker": "scripts\\Goblin.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\Goblin.cs",
+              "RelativeToolTip": "scripts\\Goblin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T00:52:29.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Maths.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\Maths.cs",
+              "RelativeDocumentMoniker": "scripts\\Maths.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\Maths.cs",
+              "RelativeToolTip": "scripts\\Maths.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T00:11:45.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\Camera.cs",
+              "RelativeDocumentMoniker": "scripts\\Camera.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\Camera.cs",
+              "RelativeToolTip": "scripts\\Camera.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAYwCUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T23:56:51.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Level.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\Level.cs",
+              "RelativeDocumentMoniker": "scripts\\Level.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\Level.cs",
+              "RelativeToolTip": "scripts\\Level.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T19:34:30.953Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://b05r2njsgd63k"]
+
+[ext_resource type="Script" path="res://scripts/Player.cs" id="1_0ontj"]
+[ext_resource type="PackedScene" uid="uid://ssk2tmijgn23" path="res://scenes/HealthBar.tscn" id="2_2ltqe"]
+[ext_resource type="Texture2D" uid="uid://bsj3gvy64a44e" path="res://graphics/wizard/wizrd_walk_left.png" id="2_w2epy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e4ceg"]
+radius = 6.99999
+height = 25.9999
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmlgc"]
+atlas = ExtResource("2_w2epy")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2udkx"]
+atlas = ExtResource("2_w2epy")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkctx"]
+atlas = ExtResource("2_w2epy")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02y1x"]
+atlas = ExtResource("2_w2epy")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dqa6s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmlgc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2udkx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkctx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02y1x")
+}],
+"loop": true,
+"name": &"walk left",
+"speed": 15.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_0ontj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.65661e-10, -3)
+rotation = -1.56874
+shape = SubResource("CapsuleShape2D_e4ceg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(1, -16)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_dqa6s")
+animation = &"walk left"
+
+[node name="HealthBar" parent="." instance=ExtResource("2_2ltqe")]
+offset_left = -24.0
+offset_top = 10.0
+offset_right = 136.0
+offset_bottom = 37.0
+scale = Vector2(0.3, 0.3)
