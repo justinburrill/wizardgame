@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cosm1e4d2vonk"]
+
+[ext_resource type="Texture2D" uid="uid://dlff0qch6ih0m" path="res://graphics/spells/iceblock.png" id="1_icqhc"]
+[ext_resource type="Script" path="res://scripts/spells/IceBlock.cs" id="2_yyk3d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4302g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_icqhc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="IceBlock" type="AnimatedSprite2D"]
+modulate = Color(1, 1, 1, 0.709804)
+z_index = 2
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(14, -43)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_4302g")
+script = ExtResource("2_yyk3d")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcc5ls4c1gcoy"
-path="res://.godot/imported/wizrd_walk_left.png-3cfce36bbd43cf1347abd1565d735952.ctex"
+uid="uid://dvt6ko63yw4cp"
+path="res://.godot/imported/mudwall.png-b20caa5bb59b8dc789d6639c4fc75d3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/wizrd_walk_left.png"
-dest_files=["res://.godot/imported/wizrd_walk_left.png-3cfce36bbd43cf1347abd1565d735952.ctex"]
+source_file="res://graphics/spells/mudwall.png"
+dest_files=["res://.godot/imported/mudwall.png-b20caa5bb59b8dc789d6639c4fc75d3b.ctex"]
 
 [params]
 

@@ -1,57 +1,169 @@
-[gd_scene load_steps=10 format=3 uid="uid://b05r2njsgd63k"]
+[gd_scene load_steps=23 format=3 uid="uid://b05r2njsgd63k"]
 
-[ext_resource type="Script" path="res://scripts/Player.cs" id="1_0ontj"]
+[ext_resource type="Script" path="res://scripts/characters/Player.cs" id="1_dsncv"]
 [ext_resource type="PackedScene" uid="uid://ssk2tmijgn23" path="res://scenes/HealthBar.tscn" id="2_2ltqe"]
-[ext_resource type="Texture2D" uid="uid://bsj3gvy64a44e" path="res://graphics/wizard/wizrd_walk_left.png" id="2_w2epy"]
+[ext_resource type="Texture2D" uid="uid://b45gkno4yjml" path="res://graphics/wizard/wizard_walk_left.png" id="2_kjd7t"]
+[ext_resource type="Texture2D" uid="uid://bwgp81b3e3l4d" path="res://graphics/wizard/wizard_stand_sheet.png" id="2_v5u4w"]
+[ext_resource type="Texture2D" uid="uid://i6nx6eoxdryq" path="res://graphics/wizard/wizard_face_cast.png" id="2_v7uun"]
+[ext_resource type="PackedScene" uid="uid://cq4frd77je0l6" path="res://scenes/ManaBar.tscn" id="5_ntn83"]
+[ext_resource type="Texture2D" uid="uid://bju1cnkm6sajc" path="res://graphics/wizard/element_circle_animation.png" id="6_7saun"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e4ceg"]
-radius = 6.99999
-height = 25.9999
+radius = 8.33263
+height = 23.9999
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fmlgc"]
-atlas = ExtResource("2_w2epy")
+[sub_resource type="AtlasTexture" id="AtlasTexture_70u0o"]
+atlas = ExtResource("2_v5u4w")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2udkx"]
-atlas = ExtResource("2_w2epy")
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq8xv"]
+atlas = ExtResource("2_v5u4w")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dkctx"]
-atlas = ExtResource("2_w2epy")
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqeif"]
+atlas = ExtResource("2_v5u4w")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ia1ng"]
+atlas = ExtResource("2_v5u4w")
 region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_02y1x"]
-atlas = ExtResource("2_w2epy")
+[sub_resource type="AtlasTexture" id="AtlasTexture_8h2hy"]
+atlas = ExtResource("2_kjd7t")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhqla"]
+atlas = ExtResource("2_kjd7t")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2hyy"]
+atlas = ExtResource("2_kjd7t")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pddo0"]
+atlas = ExtResource("2_kjd7t")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dqa6s"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fmlgc")
+"texture": ExtResource("2_v7uun")
+}],
+"loop": false,
+"name": &"cast",
+"speed": 5.0
 }, {
+"frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2udkx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dkctx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_02y1x")
+"texture": SubResource("AtlasTexture_70u0o")
 }],
 "loop": true,
-"name": &"walk left",
-"speed": 15.0
+"name": &"stand_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jq8xv")
+}],
+"loop": true,
+"name": &"stand_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqeif")
+}],
+"loop": true,
+"name": &"stand_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ia1ng")
+}],
+"loop": true,
+"name": &"stand_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8h2hy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhqla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2hyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pddo0")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 12.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4w2ik"]
+atlas = ExtResource("6_7saun")
+region = Rect2(1536, 0, 512, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_joabk"]
+atlas = ExtResource("6_7saun")
+region = Rect2(0, 0, 512, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64wjo"]
+atlas = ExtResource("6_7saun")
+region = Rect2(1024, 0, 512, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3ec7"]
+atlas = ExtResource("6_7saun")
+region = Rect2(512, 0, 512, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qxoo7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4w2ik")
+}],
+"loop": true,
+"name": &"air",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_joabk")
+}],
+"loop": true,
+"name": &"earth",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64wjo")
+}],
+"loop": true,
+"name": &"fire",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3ec7")
+}],
+"loop": true,
+"name": &"water",
+"speed": 5.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
 y_sort_enabled = true
+scale = Vector2(3, 3)
 motion_mode = 1
 wall_min_slide_angle = 0.0
-script = ExtResource("1_0ontj")
+script = ExtResource("1_dsncv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4.65661e-10, -3)
+position = Vector2(-0.333333, -3.33333)
 rotation = -1.56874
 shape = SubResource("CapsuleShape2D_e4ceg")
 
@@ -61,11 +173,26 @@ texture_filter = 1
 position = Vector2(1, -16)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_dqa6s")
-animation = &"walk left"
+animation = &"stand_down"
 
 [node name="HealthBar" parent="." instance=ExtResource("2_2ltqe")]
 offset_left = -24.0
-offset_top = 10.0
+offset_top = 9.0
 offset_right = 136.0
-offset_bottom = 37.0
+offset_bottom = 36.0
 scale = Vector2(0.3, 0.3)
+
+[node name="ManaBar" parent="." instance=ExtResource("5_ntn83")]
+offset_left = -24.0
+offset_top = 18.0
+offset_right = 136.0
+offset_bottom = 45.0
+scale = Vector2(0.3, 0.3)
+
+[node name="ElementCircle" type="AnimatedSprite2D" parent="."]
+z_index = -1
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_qxoo7")
+animation = &"earth"
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

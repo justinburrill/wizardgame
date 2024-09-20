@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsj3gvy64a44e"
-path="res://.godot/imported/wizrd_walk_left.png-ace9395285d86b8878289abc94fbff0f.ctex"
+uid="uid://byniw7ncor6ty"
+path="res://.godot/imported/goblin_swing_face.png-2753e60b68506f6a946b1f96eb54eb42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/wizard/wizrd_walk_left.png"
-dest_files=["res://.godot/imported/wizrd_walk_left.png-ace9395285d86b8878289abc94fbff0f.ctex"]
+source_file="res://graphics/goblin/goblin_swing_face.png"
+dest_files=["res://.godot/imported/goblin_swing_face.png-2753e60b68506f6a946b1f96eb54eb42.ctex"]
 
 [params]
 

@@ -22,7 +22,7 @@ namespace wizardgame.scripts
             // Move background and camera to player (jank alert!!)
             {
 
-                Velocity = Maths.VectorBetween(player.Position, Position);
+                Velocity = Maths.VectorBetweenPoints(player.Position, Position);
                 var towardsPlayer = Maths.VectorTowards(player.Position, Position);
                 var l = Velocity.Length();
                 if (l > MaxDist)

@@ -1,0 +1,108 @@
+[gd_scene load_steps=15 format=3 uid="uid://uqvx8uy3ntfq"]
+
+[ext_resource type="Texture2D" uid="uid://do4oddo0rsnlb" path="res://graphics/spells/ mudwall_animation.png" id="1_br7qa"]
+[ext_resource type="Script" path="res://scripts/spells/MudWall.cs" id="2_jud53"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3crm"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8acb"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v733b"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgloi"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8gvq"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0mah"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g32wa"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40pmy"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpo1q"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpoan"]
+atlas = ExtResource("1_br7qa")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_37yyf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3crm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8acb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v733b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgloi")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_g8gvq")
+}],
+"loop": false,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0mah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g32wa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40pmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mpo1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpoan")
+}],
+"loop": false,
+"name": &"wall",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1554w"]
+radius = 16.4
+height = 32.8
+
+[node name="MudWall" type="AnimatedSprite2D"]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(13, -99)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_37yyf")
+animation = &"wall"
+script = ExtResource("2_jud53")
+
+[node name="Hitbox" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0.2, 11.6)
+shape = SubResource("CapsuleShape2D_1554w")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

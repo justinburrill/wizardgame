@@ -1,29 +1,17 @@
-[gd_scene load_steps=11 format=3 uid="uid://ssk2tmijgn23"]
+[gd_scene load_steps=9 format=3 uid="uid://cq4frd77je0l6"]
 
-[ext_resource type="Script" path="res://scripts/progressbars/HealthBar.cs" id="1_xjd4l"]
+[ext_resource type="Script" path="res://scripts/progressbars/ManaBar.cs" id="1_ahfld"]
 
-[sub_resource type="SystemFont" id="SystemFont_5ru6w"]
+[sub_resource type="SystemFont" id="SystemFont_tnte0"]
 font_names = PackedStringArray("Arial")
 font_weight = 550
 subpixel_positioning = 0
 oversampling = 2.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_knav8"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g32fy"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4vag1"]
-bg_color = Color(0.996078, 0.192157, 0.286275, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8tidm"]
-bg_color = Color(0.28485, 0.28485, 0.28485, 1)
-expand_margin_left = 1.0
-expand_margin_top = 1.0
-expand_margin_right = 1.0
-expand_margin_bottom = 1.0
-shadow_color = Color(0, 0, 0, 0.27451)
-shadow_offset = Vector2(0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6aty4"]
-bg_color = Color(1, 1, 1, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbgsv"]
+bg_color = Color(0.280901, 0.594614, 0.795459, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jey5n"]
 bg_color = Color(0.28485, 0.28485, 0.28485, 1)
@@ -49,17 +37,17 @@ font_color = Color(0, 0.905882, 0.454902, 1)
 shadow_size = 0
 shadow_offset = Vector2(2, 2)
 
-[node name="HealthBar" type="ProgressBar"]
+[node name="ManaBar" type="ProgressBar"]
 z_index = 1
 offset_right = 160.0
 offset_bottom = 27.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = SubResource("SystemFont_5ru6w")
-theme_override_styles/background = SubResource("StyleBoxEmpty_knav8")
-theme_override_styles/fill = SubResource("StyleBoxFlat_4vag1")
+theme_override_fonts/font = SubResource("SystemFont_tnte0")
+theme_override_styles/background = SubResource("StyleBoxEmpty_g32fy")
+theme_override_styles/fill = SubResource("StyleBoxFlat_kbgsv")
 value = 65.0
 show_percentage = false
-script = ExtResource("1_xjd4l")
+script = ExtResource("1_ahfld")
 
 [node name="BG" type="ProgressBar" parent="."]
 z_index = -1
@@ -69,8 +57,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_8tidm")
-theme_override_styles/fill = SubResource("StyleBoxFlat_6aty4")
+theme_override_styles/background = SubResource("StyleBoxFlat_jey5n")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ywhnf")
 show_percentage = false
 
 [node name="DamageBar" type="ProgressBar" parent="."]

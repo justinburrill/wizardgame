@@ -1,0 +1,97 @@
+[gd_scene load_steps=13 format=3 uid="uid://dk46kw5045jlu"]
+
+[ext_resource type="Texture2D" uid="uid://byxd1uvdrlp85" path="res://graphics/spells/flame.png" id="1_8mrg3"]
+[ext_resource type="Script" path="res://scripts/spells/FireBall.cs" id="1_qouaw"]
+[ext_resource type="Texture2D" uid="uid://dmavmlyag13bk" path="res://graphics/spells/flame_explosion_animation.png" id="1_vwtam"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytidj"]
+atlas = ExtResource("1_vwtam")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cteoi"]
+atlas = ExtResource("1_vwtam")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p24bd"]
+atlas = ExtResource("1_vwtam")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpwl6"]
+atlas = ExtResource("1_vwtam")
+region = Rect2(1536, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g5bgh"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytidj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cteoi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p24bd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpwl6")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 10.0
+}]
+
+[sub_resource type="Curve" id="Curve_gs2q2"]
+_data = [Vector2(0, 0.59205), 0.0, 0.0, 0, 0, Vector2(0.111498, 0.65983), 0.0, 0.0, 0, 0, Vector2(0.595819, 0.448373), -0.639664, -0.639664, 0, 0, Vector2(1, 0), -1.72369, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_2wv14"]
+offsets = PackedFloat32Array(0, 0.745455, 0.927273)
+colors = PackedColorArray(1, 0, 0, 1, 1, 1, 0, 0.427451, 1, 1, 0.568627, 0)
+
+[sub_resource type="Curve" id="Curve_e2gov"]
+min_value = -1.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o1t7l"]
+radius = 10.198
+
+[node name="FireBall" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_g5bgh")
+speed_scale = 3.0
+script = ExtResource("1_qouaw")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(0, -3)
+lifetime = 0.15
+explosiveness = 0.19
+randomness = 0.46
+lifetime_randomness = 0.73
+texture = ExtResource("1_8mrg3")
+direction = Vector2(0, -1)
+spread = 56.52
+gravity = Vector2(0, 0)
+initial_velocity_min = 31.73
+initial_velocity_max = 163.63
+angular_velocity_min = -258.82
+angular_velocity_max = 192.94
+radial_accel_min = -50.0
+radial_accel_max = 50.0
+scale_amount_curve = SubResource("Curve_gs2q2")
+color_ramp = SubResource("Gradient_2wv14")
+hue_variation_min = -0.02
+hue_variation_max = 0.02
+hue_variation_curve = SubResource("Curve_e2gov")
+
+[node name="Hitbox" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_o1t7l")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

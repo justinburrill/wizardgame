@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nh754ay12qiy"
-path="res://.godot/imported/goblin.png-5dbf5b1c89c39894f6d35c823d8d36b0.ctex"
+uid="uid://do4oddo0rsnlb"
+path="res://.godot/imported/ mudwall_animation.png-76c8f8d23dc50624c2b41eff4e66b64a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/goblin.png"
-dest_files=["res://.godot/imported/goblin.png-5dbf5b1c89c39894f6d35c823d8d36b0.ctex"]
+source_file="res://graphics/spells/ mudwall_animation.png"
+dest_files=["res://.godot/imported/ mudwall_animation.png-76c8f8d23dc50624c2b41eff4e66b64a.ctex"]
 
 [params]
 

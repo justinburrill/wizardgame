@@ -48,24 +48,50 @@ namespace wizardgame.scripts
             return output.Normalized();
         }
 
-        public static double AngleBetween(Godot.Vector2 one, Godot.Vector2 two)
+        public static float AngleBetween(Godot.Vector2 one, Godot.Vector2 two)
         {
             var angleOne = Math.Atan(one.Y / one.X);
             var angleTwo = Math.Atan(two.Y / two.X);
-            return angleTwo - angleOne;
+            return (float)(angleTwo - angleOne);
+        }
+
+        public static float Angle(Godot.Vector2 v)
+        {
+            return AngleBetween(Vector2.Up, v);
         }
 
         public static Godot.Vector2 VectorTowards(Godot.Vector2 destination, Godot.Vector2 myPos)
         {
-            return VectorBetween(destination, myPos).Normalized();
+            return VectorBetweenPoints(destination, myPos).Normalized();
         }
 
-        public static Godot.Vector2 VectorBetween(Godot.Vector2 destination, Godot.Vector2 myPos)
+        public static Godot.Vector2 VectorBetweenPoints(Godot.Vector2 destination, Godot.Vector2 myPos)
         {
             var x = destination.X - myPos.X;
             var y = destination.Y - myPos.Y;
 
             return new Godot.Vector2(x, y);
+        }
+
+        public static Direction4 GetVectorDirection4(Vector2 vec)
+        {
+            var pi = Math.PI;
+            float angle = vec.Angle(); // from -pi to pi
+            //GD.Print($"{angle} {angle * 180 / pi}");
+            switch (angle)
+            {
+                case var x when x < pi / 4 && x > -pi / 4:
+                    return Direction4.Right;
+                case var x when x < -pi / 4 && x > 3 * -pi / 4:
+                    return Direction4.Up;
+                case var x when x > 3 * pi / 4 || x < -3 * pi / 4:
+                    return Direction4.Left;
+                case var x when x > pi / 4 && x < 3 * pi / 4:
+                    return Direction4.Down;
+                default:
+                    throw new Exception($"GetVectorDirection4 does not work - angle:{angle}");
+
+            }
         }
 
 

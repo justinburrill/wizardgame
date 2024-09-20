@@ -1,19 +1,73 @@
-[gd_scene load_steps=5 format=3 uid="uid://cd0f0yunb0f3j"]
+[gd_scene load_steps=12 format=3 uid="uid://cd0f0yunb0f3j"]
 
-[ext_resource type="Script" path="res://scripts/Goblin.cs" id="1_3174u"]
-[ext_resource type="Texture2D" uid="uid://nh754ay12qiy" path="res://graphics/goblin.png" id="1_fowr2"]
+[ext_resource type="Script" path="res://scripts/characters/Goblin.cs" id="1_npt7a"]
+[ext_resource type="Texture2D" uid="uid://nh754ay12qiy" path="res://graphics/goblin/goblin.png" id="2_fy6dr"]
+[ext_resource type="PackedScene" uid="uid://ssk2tmijgn23" path="res://scenes/HealthBar.tscn" id="3_54ws2"]
+[ext_resource type="Texture2D" uid="uid://byniw7ncor6ty" path="res://graphics/goblin/goblin_swing_face.png" id="3_k2q68"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtlw8"]
+atlas = ExtResource("3_k2q68")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n67s5"]
+atlas = ExtResource("3_k2q68")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdylb"]
+atlas = ExtResource("3_k2q68")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_272o8"]
+atlas = ExtResource("3_k2q68")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yecae"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fy6dr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtlw8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n67s5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdylb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_272o8")
+}],
+"loop": false,
+"name": &"swing_face",
+"speed": 8.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wgqbs"]
-radius = 38.71
+radius = 46.0169
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hsrur"]
-size = Vector2(28, 30)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sc71n"]
+radius = 15.0
 
 [node name="Goblin" type="CharacterBody2D"]
 y_sort_enabled = true
+scale = Vector2(3, 3)
 motion_mode = 1
 wall_min_slide_angle = 0.0
-script = ExtResource("1_3174u")
+script = ExtResource("1_npt7a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0.666667, -18)
+sprite_frames = SubResource("SpriteFrames_yecae")
+animation = &"swing_face"
 
 [node name="SwingArea" type="Area2D" parent="."]
 
@@ -22,12 +76,15 @@ position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_wgqbs")
 debug_color = Color(0.769567, 0.0327611, 9.62615e-08, 0.42)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -2)
-shape = SubResource("RectangleShape2D_hsrur")
+[node name="HealthBar" parent="." instance=ExtResource("3_54ws2")]
+offset_left = -24.0
+offset_top = 17.0
+offset_right = 136.0
+offset_bottom = 44.0
+scale = Vector2(0.3, 0.3)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-y_sort_enabled = true
-texture_filter = 1
-position = Vector2(1, -18)
-texture = ExtResource("1_fowr2")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_sc71n")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
