@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using wizardgame.scripts.utils;
 namespace wizardgame.scripts
 {
 
@@ -38,6 +39,10 @@ namespace wizardgame.scripts
             Velocity = 0;
             overlapper.Damage(dmg);
             moving = false;
+
+
+            var force = 10000;
+            overlapper.ApplyForce(normal * force);
             Rotate(Maths.AngleBetween(Vector2.Up, normal));
         }
         public void _on_animation_finished()

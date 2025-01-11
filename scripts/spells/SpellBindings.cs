@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using wizardgame.scripts.utils;
 
 namespace wizardgame.scripts.spells
 {

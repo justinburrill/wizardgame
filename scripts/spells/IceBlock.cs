@@ -11,7 +11,13 @@ namespace wizardgame.scripts.spells
         // Called when the node enters the scene tree for the first time.
         public override void _Ready()
         {
-            Position = Target.Position;
+            Position = Target.Position + new Vector2(0, -50);
+            Target.TreeExiting += Target_TreeExiting;
+        }
+
+        private void Target_TreeExiting()
+        {
+            QueueFree();
         }
 
         // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,7 +27,8 @@ namespace wizardgame.scripts.spells
             if (lifetime < 0)
             {
                 QueueFree();
-                Target.Frozen = false;
+                //Target.Frozen = false;
+                Target.statusEffects.Remove(utils.StatusEffect.Frozen);
             }
         }
     }

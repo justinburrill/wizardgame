@@ -15,7 +15,7 @@ animations = [{
 }]
 
 [node name="IceBlock" type="AnimatedSprite2D"]
-modulate = Color(1, 1, 1, 0.709804)
+modulate = Color(1, 1, 1, 0.8)
 z_index = 2
 y_sort_enabled = true
 texture_filter = 1

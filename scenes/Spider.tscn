@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://buepvn1kgyncx"]
+
+[ext_resource type="Texture2D" uid="uid://bd4hoe1ujmpa4" path="res://graphics/spider_animation.png" id="1_wkthn"]
+[ext_resource type="Script" path="res://scripts/characters/Spider.cs" id="2_rbdky"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qgax"]
+atlas = ExtResource("1_wkthn")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oj31e"]
+atlas = ExtResource("1_wkthn")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3khp"]
+atlas = ExtResource("1_wkthn")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_agjxx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qgax")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oj31e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3khp")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 7.0
+}]
+
+[node name="Spider" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_agjxx")
+animation = &"walk"
+frame = 1
+frame_progress = 0.477519
+script = ExtResource("2_rbdky")

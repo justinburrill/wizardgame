@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b05r2njsgd63k" path="res://scenes/Player.tscn" id="3_8sm08"]
 [ext_resource type="Texture2D" uid="uid://brbeq5l2pm3p6" path="res://graphics/tiles.png" id="3_sv1tm"]
 [ext_resource type="Script" path="res://scripts/Camera.cs" id="4_tp77k"]
-[ext_resource type="PackedScene" uid="uid://cd0f0yunb0f3j" path="res://scenes/Goblin.tscn" id="6_8eoc5"]
+[ext_resource type="PackedScene" uid="uid://cd0f0yunb0f3j" path="res://scenes/Goblin.tscn" id="6_s44fq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8vm1u"]
 texture = ExtResource("3_sv1tm")
@@ -75,14 +75,14 @@ shape = SubResource("WorldBoundaryShape2D_ayg1u")
 [node name="Player" parent="." instance=ExtResource("3_8sm08")]
 position = Vector2(353, -30)
 
-[node name="Goblin" parent="." instance=ExtResource("6_8eoc5")]
-position = Vector2(-478, -107)
+[node name="Goblin" parent="." instance=ExtResource("6_s44fq")]
+position = Vector2(-378, 232)
 
-[node name="Goblin2" parent="." instance=ExtResource("6_8eoc5")]
-position = Vector2(-274, -356)
+[node name="Goblin2" parent="." instance=ExtResource("6_s44fq")]
+position = Vector2(-514, -214)
 
-[node name="Goblin3" parent="." instance=ExtResource("6_8eoc5")]
-position = Vector2(-253, 399)
+[node name="Goblin3" parent="." instance=ExtResource("6_s44fq")]
+position = Vector2(-479, 38)
 
-[node name="Goblin4" parent="." instance=ExtResource("6_8eoc5")]
-position = Vector2(-557, 201)
+[node name="Goblin4" parent="." instance=ExtResource("6_s44fq")]
+position = Vector2(-236, 361)

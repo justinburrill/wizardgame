@@ -46,7 +46,7 @@ animations = [{
 }]
 
 [sub_resource type="Curve" id="Curve_gs2q2"]
-_data = [Vector2(0, 0.59205), 0.0, 0.0, 0, 0, Vector2(0.111498, 0.65983), 0.0, 0.0, 0, 0, Vector2(0.595819, 0.448373), -0.639664, -0.639664, 0, 0, Vector2(1, 0), -1.72369, 0.0, 0, 0]
+_data = [Vector2(0.0301003, 0.825034), 0.0, 1.19718, 0, 0, Vector2(0.244147, 0.930014), 0.0, 0.0, 0, 0, Vector2(0.84669, 0.562584), -1.41913, -1.41913, 0, 0, Vector2(1, 0), -1.72369, 0.0, 0, 0]
 point_count = 4
 
 [sub_resource type="Gradient" id="Gradient_2wv14"]
@@ -59,7 +59,7 @@ _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o1t7l"]
-radius = 10.198
+radius = 10.303
 
 [node name="FireBall" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_g5bgh")
@@ -67,7 +67,7 @@ speed_scale = 3.0
 script = ExtResource("1_qouaw")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2(0, -3)
+position = Vector2(0, -7.995)
 lifetime = 0.15
 explosiveness = 0.19
 randomness = 0.46
@@ -78,10 +78,11 @@ spread = 56.52
 gravity = Vector2(0, 0)
 initial_velocity_min = 31.73
 initial_velocity_max = 163.63
-angular_velocity_min = -258.82
-angular_velocity_max = 192.94
+angular_velocity_min = -607.05
+angular_velocity_max = 315.3
 radial_accel_min = -50.0
 radial_accel_max = 50.0
+scale_amount_max = 1.5
 scale_amount_curve = SubResource("Curve_gs2q2")
 color_ramp = SubResource("Gradient_2wv14")
 hue_variation_min = -0.02
@@ -90,6 +91,7 @@ hue_variation_curve = SubResource("Curve_e2gov")
 
 [node name="Hitbox" type="Area2D" parent="."]
 visible = false
+scale = Vector2(1.65, 1.65)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource("CircleShape2D_o1t7l")

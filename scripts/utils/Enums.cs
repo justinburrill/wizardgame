@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace wizardgame.scripts
+namespace wizardgame.scripts.utils
 {
     public enum AttackButton
     {
@@ -33,5 +33,10 @@ namespace wizardgame.scripts
         Down,
         Left,
         Right,
+    }
+
+    public enum StatusEffect
+    {
+        Frozen,
     }
 }

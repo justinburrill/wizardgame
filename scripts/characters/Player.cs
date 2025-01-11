@@ -2,6 +2,7 @@ using Godot;
 using System;
 using wizardgame.scripts;
 using wizardgame.scripts.spells;
+using wizardgame.scripts.utils;
 public partial class Player : Character
 {
     AnimatedSprite2D sprite;
@@ -14,7 +15,9 @@ public partial class Player : Character
     private float _mana;
     float ManaRegenRate = 30;
     bool casting = false;
-    Level level;
+
+    float TotalXPGained;
+    float XP;
 
     public float Mana
     {
@@ -30,15 +33,12 @@ public partial class Player : Character
 
     public override void _Ready()
     {
-        level = GetNode<Level>("/root/Level");
+        base._Ready();
         sprite = GetChild<AnimatedSprite2D>(1);
         healthBar = GetChild<HealthBar>(2);
         manaBar = GetChild<ManaBar>(3);
         elementCircle = GetChild<AnimatedSprite2D>(4);
-        Accel = 10000;
-        MaxSpeed = 600;
-        MaxHealth = 200;
-        Mass = 50;
+        SetProperties(200, 6000, 10000, 600, 70);
         Mana = MaxMana;
         Health = MaxHealth;
         currentElement = Element.Earth; // default element
@@ -88,20 +88,18 @@ public partial class Player : Character
             }
         }
 
-        if (moveInputted)
-        {
-            Velocity += Accel * (float)delta * moveDirection;
-        }
-        else
-        {
-            if (!Velocity.Equals(new Vector2()))
-            {
-                ApplyFrictionToVelocity(delta);
-            }
-        }
+        //if (moveInputted)
+        //{
+        //    Velocity += Accel * (float)delta * moveDirection;
+        //}
+        //else
+        //{
+        //    if (!Velocity.Equals(new Vector2()))
+        //    {
+        //        ApplyFrictionToVelocity(delta);
+        //    }
+        //}
 
-        Velocity = Velocity.LimitLength(MaxSpeed);
-        MoveAndCollide(Maths.Yscale(Velocity * (float)delta, yscale));
         if (!casting) { HandleWalkAnimation(moveDirection); }
 
 
@@ -109,6 +107,8 @@ public partial class Player : Character
         {
             Mana += ManaRegenRate * (float)delta;
         }
+
+        Move(moveDirection, (float)delta);
     }
 
 

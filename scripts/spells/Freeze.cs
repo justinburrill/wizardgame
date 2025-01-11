@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Linq;
 
 namespace wizardgame.scripts.spells
 {
@@ -26,9 +27,11 @@ namespace wizardgame.scripts.spells
 
         public override void OnCharacterImpact(Character c, Vector2 normal)
         {
-            if (c.Frozen) { return; }
+            if (c.statusEffects.Contains(utils.StatusEffect.Frozen)) { return; }
+            if (c is Player) { return; }
             //GD.Print("freeze em!!!");
-            c.Frozen = true; // mwhahaha!!
+            //c.Frozen = true; // mwhahaha!!
+            c.statusEffects.Add(utils.StatusEffect.Frozen);
             var scene = ResourceLoader.Load<PackedScene>("res://scenes/IceBlock.tscn");
             var ib = (IceBlock)scene.Instantiate();
             ib.Target = c;

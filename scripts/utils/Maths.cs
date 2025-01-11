@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace wizardgame.scripts
+namespace wizardgame.scripts.utils
 {
     public static class Maths
     {
-        public static Godot.Vector2 Yscale(Vector2 vec, float yscale)
+        public static Vector2 Yscale(Vector2 vec, float yscale)
         {
             return new Vector2(vec.X, vec.Y * yscale);
         }
@@ -29,48 +29,48 @@ namespace wizardgame.scripts
             return result;
         }
 
-        public static Godot.Vector2 RandomDirection()
+        public static Vector2 RandomDirection()
         {
             float angle = RandomInARange(0, (float)(2 * Math.PI));
-            var result = Godot.Vector2.FromAngle(angle);
+            var result = Vector2.FromAngle(angle);
             //Console.WriteLine(result);
             return result;
         }
 
         // this totally suck
-        public static Godot.Vector2 InfluenceVector(Godot.Vector2 original, Godot.Vector2 desired, float amount)
+        public static Vector2 InfluenceVector(Vector2 original, Vector2 desired, float amount)
         {
             if (!(0 < amount && amount < 1)) { throw new ArgumentOutOfRangeException(); }
             amount = amount * 2;
-            Godot.Vector2 output = new();
+            Vector2 output = new();
             output.X = original.X + desired.X * amount;
             output.Y = original.Y + desired.Y * amount;
             return output.Normalized();
         }
 
-        public static float AngleBetween(Godot.Vector2 one, Godot.Vector2 two)
+        public static float AngleBetween(Vector2 one, Vector2 two)
         {
             var angleOne = Math.Atan(one.Y / one.X);
             var angleTwo = Math.Atan(two.Y / two.X);
             return (float)(angleTwo - angleOne);
         }
 
-        public static float Angle(Godot.Vector2 v)
+        public static float Angle(Vector2 v)
         {
             return AngleBetween(Vector2.Up, v);
         }
 
-        public static Godot.Vector2 VectorTowards(Godot.Vector2 destination, Godot.Vector2 myPos)
+        public static Vector2 VectorTowards(Vector2 destination, Vector2 myPos)
         {
             return VectorBetweenPoints(destination, myPos).Normalized();
         }
 
-        public static Godot.Vector2 VectorBetweenPoints(Godot.Vector2 destination, Godot.Vector2 myPos)
+        public static Vector2 VectorBetweenPoints(Vector2 destination, Vector2 myPos)
         {
             var x = destination.X - myPos.X;
             var y = destination.Y - myPos.Y;
 
-            return new Godot.Vector2(x, y);
+            return new Vector2(x, y);
         }
 
         public static Direction4 GetVectorDirection4(Vector2 vec)
@@ -95,8 +95,8 @@ namespace wizardgame.scripts
         }
 
 
-        public static Godot.Vector2 Vectorize(float num) { return new Godot.Vector2(num, num); }
-        public static Godot.Vector2 Vectorize(double num) { return new Godot.Vector2((float)num, (float)num); }
+        public static Vector2 Vectorize(float num) { return new Vector2(num, num); }
+        public static Vector2 Vectorize(double num) { return new Vector2((float)num, (float)num); }
 
     }
 }
