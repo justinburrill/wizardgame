@@ -28,7 +28,7 @@ namespace wizardgame.scripts
             //Decel = 400;
             //MaxSpeed = 200;
             //Mass = 60;
-            SetProperties(100, 300, 400, 230, 60);
+            InitProperties(100, 300, 400, 230, 60);
             Health = MaxHealth;
 
             SwingTimer = new utils.Timer(SwingDelay, level);

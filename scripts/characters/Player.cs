@@ -38,7 +38,7 @@ public partial class Player : Character
         healthBar = GetChild<HealthBar>(2);
         manaBar = GetChild<ManaBar>(3);
         elementCircle = GetChild<AnimatedSprite2D>(4);
-        SetProperties(200, 6000, 10000, 600, 70);
+        InitProperties(200, 6000, 10000, 600, 70);
         Mana = MaxMana;
         Health = MaxHealth;
         currentElement = Element.Earth; // default element
@@ -87,18 +87,6 @@ public partial class Player : Character
                 casting = true;
             }
         }
-
-        //if (moveInputted)
-        //{
-        //    Velocity += Accel * (float)delta * moveDirection;
-        //}
-        //else
-        //{
-        //    if (!Velocity.Equals(new Vector2()))
-        //    {
-        //        ApplyFrictionToVelocity(delta);
-        //    }
-        //}
 
         if (!casting) { HandleWalkAnimation(moveDirection); }
 

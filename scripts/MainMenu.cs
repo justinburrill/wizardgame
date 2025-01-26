@@ -19,7 +19,11 @@ public partial class MainMenu : Control
 
     void _on_play_button_pressed()
     {
-        GetTree().ChangeSceneToFile("res://scenes/Level.tscn");
+        GetTree().ChangeSceneToFile("res://scenes/Map.tscn");
+    }
+    void _on_spell_button_pressed()
+    {
+        GetTree().ChangeSceneToFile("res://scenes/Spellbook.tscn");
     }
     void _on_quit_button_pressed()
     {

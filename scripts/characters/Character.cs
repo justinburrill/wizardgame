@@ -28,19 +28,20 @@ namespace wizardgame.scripts
         public float MaxSpeed;
         public float Accel;
         public float Mass;
-        public const float FrictionCoefficient = 14f;
+        public const float FrictionCoefficient = 15f;
         public float Decel;
         public HealthBar healthBar;
         public Vector2 shove;
         public List<utils.StatusEffect> statusEffects;
 
-        public void SetProperties(float maxhealth, float accel, float decel, float maxspeed, float mass)
+        public void InitProperties(float maxhealth, float accel, float decel, float maxspeed, float mass)
         {
             MaxHealth = maxhealth;
             Accel = accel;
             Decel = decel;
             MaxSpeed = maxspeed;
             Mass = mass;
+            statusEffects = new List<StatusEffect>();
         }
 
         public void Damage(float amount)

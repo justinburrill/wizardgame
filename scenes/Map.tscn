@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6h1hoh1t0dgv"]
+
+[ext_resource type="Texture2D" uid="uid://c01orpmm84n22" path="res://graphics/menu/skillmap.png" id="1_l0oqi"]
+[ext_resource type="Script" path="res://scripts/FogTexture.cs" id="2_83mtc"]
+
+[node name="Control" type="Control"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -511.0
+offset_top = -341.0
+offset_right = 535.0
+offset_bottom = 365.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+
+[node name="DunnoButton" type="Button" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "Dunno
+"
+
+[node name="MapTextureRect" type="TextureRect" parent="GridContainer"]
+z_index = -1
+texture_filter = 1
+clip_contents = true
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+texture = ExtResource("1_l0oqi")
+expand_mode = 5
+
+[node name="FogTexture" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("2_83mtc")
