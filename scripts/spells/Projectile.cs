@@ -3,9 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace wizardgame.scripts
+namespace wizardgame.spells
 {
     public abstract partial class Projectile : Spell
     {
@@ -13,9 +12,6 @@ namespace wizardgame.scripts
         public Vector2 Direction;
         public Area2D Hitbox;
         public bool moving = true;
-        public override void _Ready()
-        {
-        }
 
         public override void _Process(double delta)
         {

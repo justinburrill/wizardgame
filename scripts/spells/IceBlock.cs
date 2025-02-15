@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace wizardgame.scripts.spells
+namespace wizardgame.spells
 {
     public partial class IceBlock : AnimatedSprite2D
     {

@@ -1,12 +1,11 @@
 ﻿using Godot;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using wizardgame.scripts.utils;
+using wizardgame.hud;
+using wizardgame.levels;
+using wizardgame.utils;
 
-namespace wizardgame.scripts
+namespace wizardgame.characters
 {
     public abstract partial class Character : CharacterBody2D
     {
@@ -24,7 +23,8 @@ namespace wizardgame.scripts
                 healthBar.Amount = value;
             }
         }
-        public float MaxHealth;
+        private float _maxHealth;
+        public float MaxHealth { get { return _maxHealth; } set { _maxHealth = value; } }
         public float MaxSpeed;
         public float Accel;
         public float Mass;
@@ -43,6 +43,8 @@ namespace wizardgame.scripts
             Mass = mass;
             statusEffects = new List<StatusEffect>();
         }
+
+        public bool IsAlive => Health > 0;
 
         public void Damage(float amount)
         {

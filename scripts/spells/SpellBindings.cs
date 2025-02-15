@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using wizardgame.scripts.utils;
+using wizardgame.utils;
 
-namespace wizardgame.scripts.spells
+namespace wizardgame.spells
 {
     public class SpellBindings
     {

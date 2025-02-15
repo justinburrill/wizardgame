@@ -1,7 +1,7 @@
 using Godot;
 using System;
-using wizardgame.scripts.utils;
-namespace wizardgame.scripts
+using wizardgame.utils;
+namespace wizardgame.spells
 {
 
     public partial class FireBall : Projectile

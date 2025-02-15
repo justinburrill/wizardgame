@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using wizardgame.scripts.utils;
+using wizardgame.utils;
 
-namespace wizardgame.scripts
+namespace wizardgame.spells
 {
     public abstract partial class Spell : AnimatedSprite2D
     {

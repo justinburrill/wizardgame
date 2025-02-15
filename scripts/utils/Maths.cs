@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace wizardgame.scripts.utils
+namespace wizardgame.utils
 {
     public static class Maths
     {
@@ -55,7 +55,7 @@ namespace wizardgame.scripts.utils
             return (float)(angleTwo - angleOne);
         }
 
-        public static float Angle(Vector2 v)
+        public static float AngleFromUp(Vector2 v)
         {
             return AngleBetween(Vector2.Up, v);
         }

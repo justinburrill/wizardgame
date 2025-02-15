@@ -1,6 +1,7 @@
 ﻿using Godot;
+using wizardgame.levels;
 
-namespace wizardgame.scripts.utils
+namespace wizardgame.utils
 {
     public partial class Timer : Node
     {

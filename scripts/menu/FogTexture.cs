@@ -1,18 +1,28 @@
-using Godot;
 using System;
-namespace wizardgame.characters
+
+namespace wizardgame.menu
 {
-    public partial class Spider : Character
+    public partial class FogTexture : Godot.TextureRect
     {
         // Called when the node enters the scene tree for the first time.
         public override void _Ready()
         {
-            InitProperties(60, 1000, 1000, 1500, 40);
+            GenerateFogTexture();
         }
 
         // Called every frame. 'delta' is the elapsed time since the previous frame.
         public override void _Process(double delta)
         {
         }
+
+
+        public void GenerateFogTexture()
+        {
+            int w = 1000, h = 1000;
+
+
+
+        }
+
     }
 }

@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace wizardgame.scripts
+namespace wizardgame.spells
 {
     public partial class MudWall : Spell
     {

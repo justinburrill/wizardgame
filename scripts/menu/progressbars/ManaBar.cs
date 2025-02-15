@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace wizardgame.scripts
+namespace wizardgame.hud
 {
     public partial class ManaBar : Bar
     {

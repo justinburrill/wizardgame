@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\src\\godot\\wizard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\src\\godot\\wizard\\scripts\\FogTexture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\FogTexture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\fogtexture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\fogtexture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,8 +99,7 @@
               "RelativeToolTip": "scripts\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T02:15:59.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T02:15:59.538Z"
             },
             {
               "$type": "Document",
@@ -112,8 +111,7 @@
               "RelativeToolTip": "scripts\\spells\\IceBlock.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T03:24:06.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T03:24:06.382Z"
             },
             {
               "$type": "Document",
@@ -125,8 +123,7 @@
               "RelativeToolTip": "scripts\\characters\\Spider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T01:28:27.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T01:28:27.074Z"
             },
             {
               "$type": "Document",
@@ -138,8 +135,7 @@
               "RelativeToolTip": "scripts\\spells\\Projectile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T01:25:23.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T01:25:23.308Z"
             },
             {
               "$type": "Document",
@@ -151,8 +147,7 @@
               "RelativeToolTip": "scripts\\utils\\Timer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T01:15:17.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T01:15:17.865Z"
             },
             {
               "$type": "Document",
@@ -164,8 +159,7 @@
               "RelativeToolTip": "scripts\\utils\\Enums.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAswCcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T01:25:40.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T01:25:40.999Z"
             },
             {
               "$type": "Document",
@@ -177,8 +171,7 @@
               "RelativeToolTip": "scripts\\Level.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T01:25:22.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T01:25:22.29Z"
             },
             {
               "$type": "Document",
@@ -190,8 +183,7 @@
               "RelativeToolTip": "scripts\\characters\\Goblin.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA0wBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T21:18:15.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T21:18:15.099Z"
             },
             {
               "$type": "Document",
@@ -203,8 +195,7 @@
               "RelativeToolTip": "scripts\\spells\\FireBall.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T23:38:10.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T23:38:10.011Z"
             },
             {
               "$type": "Document",
@@ -216,8 +207,7 @@
               "RelativeToolTip": "scripts\\spells\\MudWall.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T22:21:29.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T22:21:29.336Z"
             },
             {
               "$type": "Document",
@@ -229,8 +219,7 @@
               "RelativeToolTip": "scripts\\characters\\Player.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAgwGIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T21:26:33.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T21:26:33.84Z"
             },
             {
               "$type": "Document",
@@ -242,8 +231,7 @@
               "RelativeToolTip": "scripts\\characters\\Character.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAIAywCsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T20:59:52.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T20:59:52.775Z"
             },
             {
               "$type": "Document",
@@ -255,8 +243,7 @@
               "RelativeToolTip": "scripts\\spells\\Freeze.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAswB4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T03:22:50.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T03:22:50.196Z"
             }
           ]
         },

@@ -1,6 +1,6 @@
 ﻿using Godot;
 
-namespace wizardgame.scripts
+namespace wizardgame.hud
 {
     public partial class Bar : ProgressBar
     {

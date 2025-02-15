@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\src\\godot\\wizard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\src\\godot\\wizard\\scripts\\FogTexture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\FogTexture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\characters\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\characters\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\spells\\iceblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\spells\\iceblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\spells\\freeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\spells\\freeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\spells\\mudwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\spells\\mudwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\characters\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\characters\\goblin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\spells\\freeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\spells\\freeze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\spells\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|c:\\src\\godot\\wizard\\scripts\\spells\\mudwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3701DDF9-6845-4CD5-A341-7954083D060C}|wizardgame.csproj|solutionrelative:scripts\\spells\\mudwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,32 +79,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FogTexture.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\FogTexture.cs",
+              "RelativeDocumentMoniker": "scripts\\FogTexture.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\FogTexture.cs",
+              "RelativeToolTip": "scripts\\FogTexture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T02:50:51.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\MainMenu.cs",
+              "RelativeDocumentMoniker": "scripts\\MainMenu.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\MainMenu.cs",
+              "RelativeToolTip": "scripts\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T02:15:59.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IceBlock.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\spells\\IceBlock.cs",
               "RelativeDocumentMoniker": "scripts\\spells\\IceBlock.cs",
               "ToolTip": "C:\\src\\godot\\wizard\\scripts\\spells\\IceBlock.cs",
               "RelativeToolTip": "scripts\\spells\\IceBlock.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T03:24:06.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Freeze.cs",
-              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\spells\\Freeze.cs",
-              "RelativeDocumentMoniker": "scripts\\spells\\Freeze.cs",
-              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\spells\\Freeze.cs",
-              "RelativeToolTip": "scripts\\spells\\Freeze.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAswB4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T03:22:50.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Spider.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\characters\\Spider.cs",
               "RelativeDocumentMoniker": "scripts\\characters\\Spider.cs",
@@ -109,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\spells\\Projectile.cs",
               "RelativeDocumentMoniker": "scripts\\spells\\Projectile.cs",
@@ -122,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Timer.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\utils\\Timer.cs",
               "RelativeDocumentMoniker": "scripts\\utils\\Timer.cs",
@@ -135,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Enums.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\utils\\Enums.cs",
               "RelativeDocumentMoniker": "scripts\\utils\\Enums.cs",
@@ -148,32 +169,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Level.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\Level.cs",
               "RelativeDocumentMoniker": "scripts\\Level.cs",
               "ToolTip": "C:\\src\\godot\\wizard\\scripts\\Level.cs",
               "RelativeToolTip": "scripts\\Level.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T01:25:22.29Z"
+              "WhenOpened": "2024-10-25T01:25:22.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Goblin.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\characters\\Goblin.cs",
               "RelativeDocumentMoniker": "scripts\\characters\\Goblin.cs",
               "ToolTip": "C:\\src\\godot\\wizard\\scripts\\characters\\Goblin.cs",
               "RelativeToolTip": "scripts\\characters\\Goblin.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwA0AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T21:18:15.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FireBall.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\spells\\FireBall.cs",
               "RelativeDocumentMoniker": "scripts\\spells\\FireBall.cs",
@@ -186,40 +208,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "MudWall.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\spells\\MudWall.cs",
               "RelativeDocumentMoniker": "scripts\\spells\\MudWall.cs",
               "ToolTip": "C:\\src\\godot\\wizard\\scripts\\spells\\MudWall.cs",
               "RelativeToolTip": "scripts\\spells\\MudWall.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAA1wBgAAAAIAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T22:21:29.336Z"
+              "WhenOpened": "2024-09-20T22:21:29.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\characters\\Player.cs",
               "RelativeDocumentMoniker": "scripts\\characters\\Player.cs",
               "ToolTip": "C:\\src\\godot\\wizard\\scripts\\characters\\Player.cs",
               "RelativeToolTip": "scripts\\characters\\Player.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAgwAAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwGIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T21:26:33.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\characters\\Character.cs",
               "RelativeDocumentMoniker": "scripts\\characters\\Character.cs",
               "ToolTip": "C:\\src\\godot\\wizard\\scripts\\characters\\Character.cs",
               "RelativeToolTip": "scripts\\characters\\Character.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwCIAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAIAywCsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T20:59:52.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Freeze.cs",
+              "DocumentMoniker": "C:\\src\\godot\\wizard\\scripts\\spells\\Freeze.cs",
+              "RelativeDocumentMoniker": "scripts\\spells\\Freeze.cs",
+              "ToolTip": "C:\\src\\godot\\wizard\\scripts\\spells\\Freeze.cs",
+              "RelativeToolTip": "scripts\\spells\\Freeze.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:22:50.196Z",
               "EditorCaption": ""
             }
           ]

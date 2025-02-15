@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Linq;
 
-namespace wizardgame.scripts.spells
+namespace wizardgame.spells
 {
     public partial class Freeze : Projectile
     {
