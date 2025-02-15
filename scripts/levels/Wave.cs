@@ -8,12 +8,12 @@ namespace wizardgame.levels
     {
         List<Enemy> enemies;
 
-        void AddEnemy(Enemy enemy)
+        public void AddEnemy(Enemy enemy)
         {
             enemies.Add(enemy);
         }
 
-        void AddEnemies(Enemy enemy, int count)
+        public void AddEnemies(Enemy enemy, int count)
         {
             for (int i = 0; i < count; i++)
             {
@@ -21,13 +21,14 @@ namespace wizardgame.levels
             }
         }
 
-        void SpawnWave()
+        public void SpawnWave()
         {
-            foreach (var enemy in enemies)
+            foreach (Enemy enemy in enemies)
             {
-                enemy.Spawn();
+                enemy.SpawnFromOffScreen();
             }
         }
+
         public bool IsFinished()
         {
             foreach (var enemy in enemies)

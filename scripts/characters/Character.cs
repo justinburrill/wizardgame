@@ -10,6 +10,7 @@ namespace wizardgame.characters
     public abstract partial class Character : CharacterBody2D
     {
         public Level level;
+        public AnimatedSprite2D Sprite;
         public Player player;
         public float yscale = 0.8f;
         private float _health;
@@ -27,7 +28,8 @@ namespace wizardgame.characters
         public float MaxHealth { get { return _maxHealth; } set { _maxHealth = value; } }
         public float MaxSpeed;
         public float Accel;
-        public float Mass;
+        private float _mass;
+        public float Mass { get { return _mass; } set { _mass = value; } }
         public const float FrictionCoefficient = 15f;
         public float Decel;
         public HealthBar healthBar;

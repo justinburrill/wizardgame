@@ -8,7 +8,6 @@ namespace wizardgame.characters
 {
     public partial class Player : Character
     {
-        AnimatedSprite2D sprite;
         AnimatedSprite2D elementCircle;
         SpellBindings spellBindings = new();
         Element currentElement;
@@ -37,7 +36,7 @@ namespace wizardgame.characters
         public override void _Ready()
         {
             base._Ready();
-            sprite = GetChild<AnimatedSprite2D>(1);
+            Sprite = GetChild<AnimatedSprite2D>(1);
             healthBar = GetChild<HealthBar>(2);
             manaBar = GetChild<ManaBar>(3);
             elementCircle = GetChild<AnimatedSprite2D>(4);
@@ -86,7 +85,7 @@ namespace wizardgame.characters
                 }
                 if (CastSpellByInput(aimDirection, (AttackButton)attackInput))
                 {
-                    sprite.Play("cast");
+                    Sprite.Play("cast");
                     casting = true;
                 }
             }
@@ -207,7 +206,7 @@ namespace wizardgame.characters
                 _ => throw new Exception("player animation switch broken"),
             };
 
-            sprite.Play(animation);
+            Sprite.Play(animation);
 
 
         }
@@ -215,7 +214,7 @@ namespace wizardgame.characters
 
         public void _on_animated_sprite_2d_animation_finished()
         {
-            if (sprite.Animation == "cast")
+            if (Sprite.Animation == "cast")
             {
                 HandleWalkAnimation(LastMoveDirection);
                 casting = false;

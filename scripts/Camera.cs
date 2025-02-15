@@ -1,6 +1,7 @@
 using Godot;
 using System;
-using wizardgame.scripts.utils;
+using wizardgame.characters;
+using wizardgame.utils;
 namespace wizardgame.scripts
 {
     public partial class Camera : Godot.Camera2D
