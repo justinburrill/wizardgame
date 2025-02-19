@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Linq;
+using wizardgame.characters;
 
 namespace wizardgame.spells
 {

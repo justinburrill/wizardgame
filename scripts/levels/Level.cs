@@ -1,22 +1,26 @@
 ﻿using Godot;
 using System;
+using System.Collections.Generic;
 using wizardgame.utils;
 
 namespace wizardgame.levels
 {
     public abstract partial class Level : Node2D
     {
+        WaveManager waveManager;
         StaticBody2D borders;
 
         public override void _Ready()
         {
+            borders = GetNode<StaticBody2D>("Borders");
+            waveManager = new(this, new List<Wave>());
         }
 
         public override void _Process(double delta)
         {
         }
 
-        public Rect GetPlayAreaDimensions()
+        public Rect GetPlayAreaPosRect()
         {
             Vector2 pos = new();
             float bottomY = 0;

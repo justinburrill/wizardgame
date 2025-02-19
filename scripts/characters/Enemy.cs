@@ -8,6 +8,7 @@ namespace wizardgame.characters
 {
     public abstract partial class Enemy : Character
     {
+
         public Array<Enemy> GetNearbyEnemies(Area2D area)
         {
             var bodies = area.GetOverlappingBodies();
@@ -31,16 +32,16 @@ namespace wizardgame.characters
 
         public virtual void SpawnFromOffScreen()
         {
-            var camref = GetNode<Camera2D>("Camera");
-            var camArea = new Rect(camref.Position, camref.GetViewportRect().Size);
+            //var camref = GetNode<Camera2D>("Camera");
+            //var camArea = new Rect(camref.Position, camref.GetViewportRect().Size);
+            var worldArea = level.GetPlayAreaPosRect();
             float dist = 50;
-            Direction4 randomDir = (Direction4)RandomInARange(0, 4);
-            Vector2 pos = randomDir switch
+            Vector2 pos = Direction4Extensions.Random() switch
             {
-                Direction4.Up => new Vector2(RandomInARange(camArea.X, camArea.RightX), camArea.Y + dist),
-                Direction4.Down => new Vector2(RandomInARange(camArea.X, camArea.RightX), camArea.BottomY - dist),
-                Direction4.Left => new Vector2(camArea.X - dist, RandomInARange(camArea.Y, camArea.BottomY)),
-                Direction4.Right => new Vector2(camArea.RightX + dist, RandomInARange(camArea.Y, camArea.BottomY)),
+                Direction4.Up => new Vector2(RandomInARange(worldArea.X, worldArea.RightX), worldArea.Y + dist),
+                Direction4.Down => new Vector2(RandomInARange(worldArea.X, worldArea.RightX), worldArea.BottomY - dist),
+                Direction4.Left => new Vector2(worldArea.X - dist, RandomInARange(worldArea.Y, worldArea.BottomY)),
+                Direction4.Right => new Vector2(worldArea.RightX + dist, RandomInARange(worldArea.Y, worldArea.BottomY)),
                 _ => throw new NotImplementedException("unexpected direction"),
             };
 

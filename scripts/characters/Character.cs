@@ -35,6 +35,7 @@ namespace wizardgame.characters
         public HealthBar healthBar;
         public Vector2 shove;
         public List<utils.StatusEffect> statusEffects;
+        public event Action<Character> Died;
 
         public void InitProperties(float maxhealth, float accel, float decel, float maxspeed, float mass)
         {
@@ -112,6 +113,7 @@ namespace wizardgame.characters
 
         public void Kill()
         {
+            Died?.Invoke(this); // event for death
             QueueFree();
         }
     }

@@ -1,4 +1,6 @@
 ﻿
+using static wizardgame.utils.Maths;
+
 namespace wizardgame.utils
 {
     public enum AttackButton
@@ -28,6 +30,14 @@ namespace wizardgame.utils
         Down,
         Left,
         Right,
+    }
+
+    public static class Direction4Extensions
+    {
+        public static Direction4 Random()
+        {
+            return (Direction4)RandomInARange(0, 4);
+        }
     }
 
     public enum StatusEffect

@@ -1,5 +1,6 @@
 using Godot;
-using System;
+using wizardgame.characters;
+using wizardgame.levels;
 
 namespace wizardgame.spells
 {

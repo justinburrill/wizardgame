@@ -1,9 +1,10 @@
 using Godot;
 using System;
+using wizardgame.characters;
 using wizardgame.utils;
+
 namespace wizardgame.spells
 {
-
     public partial class FireBall : Projectile
     {
         //PackedScene fireballScene;

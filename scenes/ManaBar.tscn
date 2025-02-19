@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cq4frd77je0l6"]
 
-[ext_resource type="Script" path="res://scripts/progressbars/ManaBar.cs" id="1_ahfld"]
+[ext_resource type="Script" path="res://scripts/hud/progressbars/ManaBar.cs" id="1_jtg2e"]
 
 [sub_resource type="SystemFont" id="SystemFont_tnte0"]
 font_names = PackedStringArray("Arial")
@@ -47,7 +47,7 @@ theme_override_styles/background = SubResource("StyleBoxEmpty_g32fy")
 theme_override_styles/fill = SubResource("StyleBoxFlat_kbgsv")
 value = 65.0
 show_percentage = false
-script = ExtResource("1_ahfld")
+script = ExtResource("1_jtg2e")
 
 [node name="BG" type="ProgressBar" parent="."]
 z_index = -1

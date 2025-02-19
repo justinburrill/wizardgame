@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://6gxfxf2e6hwa"]
 
-[ext_resource type="Script" path="res://scripts/MainMenu.cs" id="1_iqmof"]
+[ext_resource type="Script" path="res://scripts/menu/MainMenu.cs" id="1_iqmof"]
 
 [node name="MainMenu" type="Control"]
 texture_filter = 1

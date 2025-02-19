@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://c60x0dnn1jdtn"]
 
+[ext_resource type="Script" path="res://scripts/levels/LevelStonePath.cs" id="1_5edte"]
 [ext_resource type="Texture2D" uid="uid://qr3k2eb5whmm" path="res://graphics/white.png" id="2_a3ixr"]
 [ext_resource type="Texture2D" uid="uid://brbeq5l2pm3p6" path="res://graphics/tiles.png" id="3_3nqkf"]
 [ext_resource type="Script" path="res://scripts/Camera.cs" id="4_yc1eb"]
 [ext_resource type="PackedScene" uid="uid://b05r2njsgd63k" path="res://scenes/Player.tscn" id="5_uajht"]
-[ext_resource type="PackedScene" uid="uid://cd0f0yunb0f3j" path="res://scenes/Goblin.tscn" id="6_kw8he"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8vm1u"]
 texture = ExtResource("3_3nqkf")
@@ -31,6 +31,7 @@ sources/0 = SubResource("TileSetAtlasSource_8vm1u")
 
 [node name="LevelStonePath" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_5edte")
 
 [node name="Background" type="Sprite2D" parent="."]
 visible = false
@@ -54,33 +55,25 @@ scale = Vector2(3, 3)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders"]
 position = Vector2(0, 232)
 shape = SubResource("WorldBoundaryShape2D_vvt7n")
+one_way_collision = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Borders"]
 position = Vector2(28, -392)
 rotation = 3.14159
 shape = SubResource("WorldBoundaryShape2D_urr0g")
+one_way_collision = true
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Borders"]
 position = Vector2(-488, -57)
 rotation = 1.5708
 shape = SubResource("WorldBoundaryShape2D_yxh61")
+one_way_collision = true
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Borders"]
 position = Vector2(631, -119)
 rotation = 4.71239
 shape = SubResource("WorldBoundaryShape2D_ayg1u")
+one_way_collision = true
 
 [node name="Player" parent="." instance=ExtResource("5_uajht")]
-position = Vector2(353, -30)
-
-[node name="Goblin" parent="." instance=ExtResource("6_kw8he")]
-position = Vector2(-378, 232)
-
-[node name="Goblin2" parent="." instance=ExtResource("6_kw8he")]
-position = Vector2(-514, -214)
-
-[node name="Goblin3" parent="." instance=ExtResource("6_kw8he")]
-position = Vector2(-479, 38)
-
-[node name="Goblin4" parent="." instance=ExtResource("6_kw8he")]
-position = Vector2(-236, 361)
+position = Vector2(-8.00003, 3)
