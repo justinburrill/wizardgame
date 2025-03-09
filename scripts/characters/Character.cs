@@ -11,8 +11,8 @@ namespace wizardgame.characters
     {
         public Level level;
         public AnimatedSprite2D Sprite;
-        public Player player;
-        public float yscale = 0.8f;
+        protected const float yscale = 0.8f;
+        protected const float FrictionCoefficient = 15f;
         private float _health;
         public float Health
         {
@@ -26,14 +26,13 @@ namespace wizardgame.characters
         }
         private float _maxHealth;
         public float MaxHealth { get { return _maxHealth; } set { _maxHealth = value; } }
-        public float MaxSpeed;
-        public float Accel;
+        private float MaxSpeed;
+        protected float Accel;
         private float _mass;
         public float Mass { get { return _mass; } set { _mass = value; } }
-        public const float FrictionCoefficient = 15f;
-        public float Decel;
-        public HealthBar healthBar;
-        public Vector2 shove;
+        private float Decel;
+        protected HealthBar healthBar;
+        private Vector2 shove;
         public List<utils.StatusEffect> statusEffects;
         public event Action<Character> Died;
 
@@ -96,8 +95,12 @@ namespace wizardgame.characters
 
         public override void _Ready()
         {
-            level = GetNode<Level>("/root/Level");
-            player = GetNode<Player>("/root/Level/Player");
+            base._Ready(); // ?
+            level = GetTree().Root.GetChild<Level>(0);
+            if (level is null)
+            {
+                throw new NullReferenceException("Level not found");
+            }
         }
 
         public void ApplyFrictionToVelocity(double delta)
