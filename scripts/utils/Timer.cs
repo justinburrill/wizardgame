@@ -1,4 +1,5 @@
 ﻿using Godot;
+using System;
 using wizardgame.levels;
 
 namespace wizardgame.utils
@@ -7,7 +8,8 @@ namespace wizardgame.utils
     {
         public double Time { get; set; }
         double TimerLength;
-        public bool Done = false;
+        public bool IsDone = false;
+        public event Action<Timer> Finished;
         Level level;
 
         public Timer(double len, Level lev)
@@ -22,13 +24,14 @@ namespace wizardgame.utils
             Time += delta;
             if (Time > TimerLength)
             {
-                Done = true;
+                IsDone = true;
+                Finished?.Invoke(this);
             }
         }
 
         public void Reset()
         {
-            Done = false;
+            IsDone = false;
             Time = 0;
         }
     }
