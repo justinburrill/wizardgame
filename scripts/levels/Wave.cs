@@ -12,12 +12,37 @@ namespace wizardgame.levels
 
         private List<Enemy> enemies;
         public int EnemiesLeft => enemies.Count;
+        public int MaxEnemies { get; set; }
 
+        public static List<Wave> ExampleWaves()
+        {
+            List<Wave> waves = new() {
+            new(new Goblin(), 5),
+            new(new Goblin(), 10),
+            new(new Goblin(), 15)
+            };
+            return waves;
+        }
+
+        public Wave()
+        {
+            enemies = new List<Enemy>();
+        }
+        public Wave(List<Enemy> enemies)
+        {
+            this.enemies = enemies;
+        }
+        public Wave(Enemy enemy, int count)
+        {
+            enemies = new List<Enemy>();
+            AddEnemies(enemy, count);
+        }
 
         public void AddEnemy(Enemy enemy)
         {
             enemy.Died += OnEnemyDied;
             enemies.Add(enemy);
+            MaxEnemies++;
         }
 
         private void OnEnemyDied(Character enemy)
@@ -41,11 +66,11 @@ namespace wizardgame.levels
             }
         }
 
-        public void SpawnWave()
+        public void SpawnWave(Level level)
         {
             foreach (Enemy enemy in enemies)
             {
-                enemy.SpawnFromOffScreen();
+                enemy.SpawnFromOffScreen(level);
             }
         }
 

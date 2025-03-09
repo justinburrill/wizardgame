@@ -21,7 +21,7 @@ namespace wizardgame.menu
         void _on_play_button_pressed()
         {
             // story mode?
-            // GetTree().ChangeSceneToFile("res://scenes/Map.tscn");
+            GetTree().ChangeSceneToFile("res://scenes/LevelStonePath.tscn");
 
 
         }

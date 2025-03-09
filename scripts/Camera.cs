@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using wizardgame.characters;
+using wizardgame.levels;
 using wizardgame.utils;
 namespace wizardgame.scripts
 {
@@ -8,14 +9,16 @@ namespace wizardgame.scripts
     {
         Vector2 Velocity = new();
         float MaxDist = 100;
+        Level level;
         Player player;
         Sprite2D bg;
 
         // Called when the node enters the scene tree for the first time.
         public override void _Ready()
         {
-            player = GetNode<Player>("/root/Level/Player");
-            bg = GetNode<Sprite2D>("/root/Level/Background");
+            level = GetTree().Root.GetChild<Level>(0);
+            player = level.GetNode<Player>("./Player");
+            bg = level.GetNode<Sprite2D>("Background");
         }
 
         // Called every frame. 'delta' is the elapsed time since the previous frame.
